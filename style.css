@@ -1,8 +1,11 @@
+/* Little bit CSS to add some style to out editable div */
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
   height: 100vh;
@@ -13,6 +16,7 @@
   color: white;
   flex-direction: column;
 }
+
 #elem {
   border-radius: 15px;
 }
