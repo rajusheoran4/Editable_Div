@@ -1,4 +1,5 @@
-console.log('This is tutorial 21 ')
+// Out JavaScript Code for Editable Div
+
 
 // Creating a div with javascript
 let divElem = document.createElement('div');
@@ -8,7 +9,7 @@ divElem.setAttribute('id', 'elem');
 divElem.setAttribute('class', 'elem');
 divElem.setAttribute('style', 'border: 2px solid #fff; margin:23px; padding:23px; width:auto;overflow:hidden;');
 
-
+// Creating variable for storing text of editable div in the localStorage of your browser
 let val = localStorage.getItem('text');
 let text;
 if (val == null) {
@@ -26,10 +27,8 @@ divElem.appendChild(text);
 let container = document.querySelector('.container');
 let first = document.getElementById('myfirst');
 
-
 // Insert the created div
 container.insertBefore(divElem, first)
-
 
 // Adding Click and Blur Event Listner on the editable div
 divElem.addEventListener('click', function () {
@@ -45,5 +44,6 @@ divElem.addEventListener('click', function () {
     })
 })
 
-// Fire the console to check error
-console.log(divElem, container, first);
+
+
+// Editable Div By Geeks Help (www.geekshelp.in)
